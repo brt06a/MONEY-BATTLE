@@ -3,66 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Money Battle Login</title>
+  <title>Money Battle</title>
   <style>
-    body {
+    body, html {
+      height: 100%;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
       background: url('bg.png.png') no-repeat center center fixed;
       background-size: cover;
-      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .clickable-elements {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -40%);
-      width: 300px;
+    .form-container {
+      width: 350px;
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 20px #000;
+      color: #f5d47a;
       text-align: center;
+    }
+
+    .form-container h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: gold;
+    }
+
+    .form-container h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: gold;
     }
 
     input[type="email"],
     input[type="password"] {
-      width: 90%;
-      padding: 10px;
+      width: 100%;
+      padding: 12px;
       margin: 10px 0;
-      background: transparent;
       border: none;
-      border-bottom: 2px solid #fff;
-      color: white;
+      border-radius: 8px;
       font-size: 16px;
-      text-align: center;
     }
 
     .btn {
-      width: 90%;
+      width: 100%;
       padding: 12px;
       margin: 10px 0;
-      background: transparent;
-      border: none;
-      color: white;
       font-size: 18px;
-      font-weight: bold;
+      background-color: #c0392b;
+      color: white;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e74c3c;
     }
 
     .remember {
-      font-size: 14px;
-      color: #fff;
       margin-top: 10px;
+      font-size: 16px;
+      color: #f5d47a;
     }
   </style>
 </head>
 <body>
-  <div class="clickable-elements">
-    <input type="email" placeholder="E-mail" />
-    <input type="password" placeholder="Password" />
-    <button class="btn">Login</button>
-    <button class="btn">Sign Up</button>
-    <div class="remember">Remember me</div>
+
+  <div class="form-container">
+    <h1>MONEY</h1>
+    <h2>BATTLE</h2>
+
+    <form>
+      <input type="email" placeholder="E-mail" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn">Sign Up</button>
+    </form>
+
+    <div class="remember">
+      <input type="checkbox" id="remember" />
+      <label for="remember">Remember me</label>
+    </div>
   </div>
+
 </body>
 </html>
+
 
 
