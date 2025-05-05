@@ -1,92 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money Battle - Login</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('1917dfcf-ac55-4a5a-855f-2df18140b8ff.png') no-repeat center center fixed;
-            background-size: cover;
-            font-family: 'Georgia', serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Money Battle Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('1917dfcf-ac55-4a5a-855f-2df18140b8ff.png') no-repeat center center fixed;
+      background-size: cover;
+    }
 
-        .container {
-            width: 350px;
-            margin: 100px auto;
-            background: url('https://i.ibb.co/QY1GxtW/wood-panel.png') center center no-repeat;
-            background-size: cover;
-            padding: 40px 20px;
-            border-radius: 25px;
-            color: #f5d473;
-            text-align: center;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-        }
+    .container {
+      width: 320px;
+      margin: 80px auto;
+      padding: 40px 20px;
+      background: url('https://i.imgur.com/z7RXznv.png') no-repeat center center;
+      background-size: contain;
+      height: 600px;
+      position: relative;
+      color: #fff;
+      text-align: center;
+    }
 
-        h1 {
-            margin: 0;
-            font-size: 32px;
-            color: gold;
-            text-shadow: 2px 2px 4px #000;
-        }
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 30px;
+      color: #ffc107;
+    }
 
-        .input-box {
-            margin: 20px 0;
-        }
+    .input {
+      margin-top: 20px;
+      display: block;
+    }
 
-        input[type="text"], input[type="password"] {
-            width: 80%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background: #3e2c17;
-            color: #fff6d1;
-            font-size: 16px;
-        }
+    input[type="email"],
+    input[type="password"] {
+      width: 80%;
+      padding: 10px;
+      margin: 10px auto;
+      border: none;
+      border-radius: 5px;
+      background-color: #4e2e0e;
+      color: #fff;
+    }
 
-        .button {
-            display: block;
-            width: 85%;
-            margin: 15px auto;
-            padding: 10px;
-            background: #b52e2e;
-            border: 2px solid #6a1b1b;
-            color: #fff6d1;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 8px;
-            cursor: pointer;
-            text-shadow: 1px 1px 2px #000;
-        }
+    .btn {
+      display: block;
+      width: 60%;
+      padding: 12px;
+      margin: 10px auto;
+      background-color: #c0392b;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
 
-        .checkbox {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #fff6d1;
-        }
-
-        .checkbox input {
-            margin-right: 5px;
-        }
-    </style>
+    .remember {
+      font-size: 14px;
+      color: #f5d47e;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>MONEY BATTLE</h1>
-        <div class="input-box">
-            <input type="text" placeholder="E-mail">
-        </div>
-        <div class="input-box">
-            <input type="password" placeholder="Password">
-        </div>
-        <button class="button">Login</button>
-        <button class="button">Sign Up</button>
-        <div class="checkbox">
-            <input type="checkbox" id="remember">
-            <label for="remember">Remember me</label>
-        </div>
-    </div>
+  <div class="container">
+    <div class="title">MONEY BATTLE</div>
+    <form>
+      <input type="email" placeholder="E-mail" class="input" />
+      <input type="password" placeholder="Password" class="input" />
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn">Sign Up</button>
+      <div class="remember">Remember me</div>
+    </form>
+  </div>
 </body>
 </html>
+
